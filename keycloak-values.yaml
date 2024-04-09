@@ -10,10 +10,11 @@ ingress:
   enabled: false
 
 postgresql:
-  enabled: false
+  enabled: true
+  postgresqlPassword: 123456789
 externalDatabase:
-  host: "10.92.192.3"
-  port: "5432"
-  user: "postgres"
-  database: "postgres"
-  password: "123456789"
+  host: "mssql.example.com"
+  port: 1433
+  user: keycloak
+  database: keycloak
+  existingSecret: passwords

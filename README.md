@@ -4,6 +4,7 @@
 
 
 - keycloak-values.yaml for external postgres
+- Note: Make sure to use external postgres ---> enabled false
 ```yaml
 production: true
 auth:
@@ -42,6 +43,8 @@ ingress:
 postgresql:
   enabled: true
   postgresqlPassword: 123456789
+  
+# Note: Once postgres enabled true below will not applicable  
 externalDatabase:
   host: "mssql.example.com"
   port: 1433
