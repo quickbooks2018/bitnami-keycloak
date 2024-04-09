@@ -35,6 +35,10 @@ helm upgrade --install keycloak bitnami/keycloak --version v21.0.0 --namespace k
 ```
 
 - postgres connection string
+- postgres client
+```bash
+kubectl run postgres --image=postgres:latest --env="POSTGRES_PASSWORD=examplepass" --port=5432 
+```
 ```bash
 psql -h localhost -p 5432 -U user1 -d mydb
 psql -h 10.92.192.3 -p 5432 -U postgres
