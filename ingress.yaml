@@ -1,0 +1,17 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: keycloak-ingressroute
+  namespace: keycloak
+  annotations:
+    kubernetes.io/ingress.class: "traefik-external"
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`keycloak.saqlainmushtaq.com`) && PathPrefix(`/`)
+      kind: Rule
+      services:
+        - name: keycloak
+          namespace: keycloak
+          port: 443
