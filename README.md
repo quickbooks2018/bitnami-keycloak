@@ -38,6 +38,7 @@ helm upgrade --install keycloak bitnami/keycloak --version v21.0.0 --namespace k
 - postgres client
 ```bash
 kubectl run postgres --image=postgres:latest --env="POSTGRES_PASSWORD=examplepass" --port=5432 
+kubectl run pgadmin --namespace=default --image=dpage/pgadmin4:latest --port=80 --env="PGADMIN_DEFAULT_EMAIL=admin@pgadmin.org" --env="PGADMIN_DEFAULT_PASSWORD=admin"
 ```
 ```bash
 psql -h localhost -p 5432 -U user1 -d mydb
