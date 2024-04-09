@@ -17,4 +17,4 @@ externalDatabase:
   port: 1433
   user: keycloak
   database: keycloak
-  existingSecret: passwords
+  password: passwords

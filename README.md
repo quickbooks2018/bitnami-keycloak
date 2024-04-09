@@ -24,7 +24,7 @@ externalDatabase:
   port: 1433
   user: keycloak
   database: keycloak
-  existingSecret: passwords 
+  password: passwords 
 ```
 
 - keycloak-values.yaml for internal postgres
@@ -50,7 +50,7 @@ externalDatabase:
   port: 1433
   user: keycloak
   database: keycloak
-  existingSecret: passwords
+  password: passwords
 ```
 
 
