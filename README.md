@@ -111,3 +111,8 @@ spec:
           namespace: keycloak
           port: 443
 ```
+
+- DEBUG Check current configurations
+```bash
+/opt/bitnami/keycloak/bin/kc.sh show-config
+```
