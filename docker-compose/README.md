@@ -15,3 +15,8 @@ curl -SL https://github.com/docker/compose/releases/download/v2.27.0/docker-comp
 ```bash
 docker compose -p keycloak up -d --build
 ```
+
+- DEBUG Check current configurations
+```bash
+/opt/bitnami/keycloak/bin/kc.sh show-config
+```
