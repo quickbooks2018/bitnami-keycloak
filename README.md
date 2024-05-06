@@ -2,6 +2,8 @@
 
 - https://github.com/bitnami/charts/tree/main/bitnami/keycloak
 
+- https://hub.docker.com/r/bitnami/keycloak/
+
 
 - keycloak-values.yaml for external postgres
 - Note: Make sure to use external postgres ---> enabled false
